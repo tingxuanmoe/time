@@ -33,18 +33,6 @@
         </div>
         <div id="win-message" class="hidden">You won!</div>
     </div>
-    <script>
-        const clock = document.querySelector('.clock');
-        for (let i = 0; i < 60; i++) {
-            const mark = document.createElement('div');
-            mark.classList.add('mark');
-            if (i % 5 === 0) {
-                mark.classList.add('hour-mark');
-            }
-            mark.style.transform = `rotate(${i * 6}deg) translateY(-145px)`;
-            clock.appendChild(mark);
-        }
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
